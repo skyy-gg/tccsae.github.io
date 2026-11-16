@@ -10,10 +10,14 @@ function login () {
     const passwordUserInput = passwordBox.value;
 
     if (emailUserInput === email && passwordUserInput === senha) {
+
         window.location.href = "./home.html";
+
     }else {
+
         emailBox.value = '';
         passwordBox.value = '';
+        
     }
 
 }

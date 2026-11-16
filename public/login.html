@@ -14,20 +14,21 @@
             
             <h2>Login</h2>
 
-            <label for="User">Usuário</label>
-            <input type="text" name="Usuário" placeholder="Usuário">
+            <label for="Email" class="label">E-mail</label>
+            <input type="email" name="E-mail" placeholder="E-mail" class="input" id="Email-Input">
 
-            <label for="Password">Senha</label>
-            <input type="password" name="Password" placeholder="Usuário">
+            <label for="Password" class="label">Senha</label>
+            <input type="password" name="Password" placeholder="Usuário" class="input" id="Password-Input">
 
-            <button type="submit">Entrar</button>
+            <button id="loginBtn" onclick="login()">Entrar</button>
         
         </form>
         
     </main>
 
     <p>Novo por aqui?</p><a href="signIn.html">Criar conta</a>
-    <a href="index.html">Voltar para a tela inicial</a>
+    <a href="/">Voltar para a tela inicial</a>
 
+    <script src="js/login.js"></script>
 </body>
 </html>

@@ -3,3 +3,5 @@
 
 # Ignora a pasta de pacotes do Node (ela é gigante e não deve ir ao GitHub)
 node_modules/
+.expo/README.md
+README.md

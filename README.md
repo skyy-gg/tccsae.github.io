@@ -1,8 +1,10 @@
+# Sistema de Análise Estudantil - TCC
 
-Node.JS
 
-Comandos básicos para funcionamento local do site:
-  npm install express
+Node.JS necessário para o funcionamento adequado do projeto
 
-Comando para iniciar o servidor localmente:
-  npx expo start --web
+**Comandos básicos para funcionamento local do site (terminal):**
+npm install express
+
+**Comando para iniciar o servidor localmente (terminal):**
+npx expo start --web

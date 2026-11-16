@@ -1,10 +1,12 @@
 # Sistema de Análise Estudantil - TCC
 
 
-Node.JS necessário para o funcionamento adequado do projeto
 
-**Comandos básicos para funcionamento local do site (terminal):**
-npm install express
+Instalação individual do [Node.JS](https://nodejs.org/pt-br/download) necessário para o funcionamento adequado do projeto
 
-**Comando para iniciar o servidor localmente (terminal):**
-npx expo start --web
+**Comandos básicos para funcionamento local do site (terminal):** <br>
+```npm install express```
+```npm install expo```
+
+**Comando para iniciar o servidor localmente (terminal):** <br>
+```npx expo start --web```

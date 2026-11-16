@@ -1,0 +1,122 @@
+/* ==========================================
+   Estilização da Navbar (Estilo GitHub/GitLab)
+   ========================================== */
+
+/* Garante margem zero no body para o header colar nas bordas (caso a página não tenha) */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.dev-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #161B22;
+    color: #ffffff;
+    border-bottom: 2px solid #30363D;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.dev-header * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Oculta a barra de rolagem no mobile */
+.dev-header::-webkit-scrollbar {
+    display: none;
+}
+.dev-header {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Área esquerda: Links de navegação */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Links de Navegação */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    white-space: nowrap;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.15s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #a9a9a9;
+}
+
+/* Área direita: Container com bordas arredondadas para Login e Cadastrar */
+.header-right {
+    display: flex;
+    align-items: center;
+    background-color: #21262D;
+    border: 1px solid #30363D;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+/* Estilo dos links com tamanho igual e centralizados */
+.auth-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 0;
+    width: 75px;
+    text-align: center;
+    display: inline-block;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    white-space: nowrap;
+}
+
+.auth-link:hover {
+    color: #a9a9a9;
+    background-color: #30363D;
+}
+
+.auth-link:not(:last-child) {
+    border-right: 1px solid #30363D;
+}
+
+/* Ajustes para telas maiores (Desktop) */
+@media (min-width: 768px) {
+    .dev-header {
+        padding: 12px 24px;
+    }
+    .nav-links {
+        gap: 24px;
+    }
+    .nav-links a {
+        font-size: 14px;
+    }
+    .auth-link {
+        width: 90px;
+        font-size: 14px;
+        padding: 6px 0;
+    }
+}

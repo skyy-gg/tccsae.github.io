@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home - DevHub</title>
+    <!-- CSS global e o CSS exclusivo da página Home -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <div data-include="/partials/navbar.html"></div>
-        
-    <nav>
-
-        <header>
-            <div class="nav-div" id="nav-1">
-                <h1><a href="home.html" id="home">Home</a></h1>
-            </div>
-            <a href="settings.html" id="settings"><img id="settingsIcon" src="img/configuracoes.png" alt="configuracoes"></a>
-        </header>
-
-        <ul>
-            <li class="navItem"><a href="myProjects.html">Meus Projetos</a></li>
-            <li class="navItem"><a href="createProject.html">Criar Projeto</a></li>
-            <li class="navItem"><a href="profile.html">Perfil</a></li>
-        </ul>
+    <main>    
+        <!-- Bloco de Ações Rápidas (Estilo Botão "Criar Novo" do GitHub) -->
+        <section class="quick-actions">
+            <a href="newProject.html" class="btn-primary-git">
+                <svg height="16" viewBox="0 0 16 16" width="16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.6-1.2-1.6 1.2a.25.25 0 0 1-.4-.2Z"></path></svg>
+                <span>Novo Projeto</span>
+            </a>
             
-    </nav>
+            <!-- Ação secundária única apontando para myProjects.html -->
+            <div class="secondary-actions">
+                <a href="myProjects.html" class="inline-link">Explorar Repositórios</a>
+            </div>
+        </section>
 
+        <!-- Cartão de Boas-Vindas Centralizado e Discreto -->
+        <section class="welcome-card">
+            <div class="welcome-badge">Painel Acadêmico & Profissional</div>
+            <h2>Bem-vindo de volta ao seu ambiente de desenvolvimento.</h2>
+            <p>
+                A consistência na prática diária é o alicerce para o desenvolvimento técnico sólido. Utilize este espaço para estruturar seus códigos, gerenciar versões e acompanhar a evolução contínua dos seus projetos de forma organizada e eficiente.
+            </p>
+        </section>
+    </main>
     <div data-include="/partials/footer.html"></div>
     <script src="/js/includes.js"></script>
 </body>

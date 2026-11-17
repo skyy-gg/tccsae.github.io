@@ -10,5 +10,3 @@ async function exibirAluno(nome) {
         console.log('Usuário Encontrado: ', rows[0]);
     }
 }
-
-exibirAluno('alef');

@@ -5,5 +5,3 @@ async function deleteAluno(id) {
     const [] = await pool.execute(sql, [id]);
     console.log(`Aluno com ID = ${id} foi deletado.`)
 }
-
-deleteAluno(1);

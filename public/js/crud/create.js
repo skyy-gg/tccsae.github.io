@@ -1,4 +1,4 @@
-const pool = require('./db');
+const pool = require('../../../db');
 
 async function criarAluno(nome, email, senha) {
   const sql = 'INSERT INTO tbAluno (nome, email, senha) VALUES (?, ?, ?)';

@@ -1,0 +1,121 @@
+/* ==========================================
+   Estilos da Tela de Cadastro (Desktop & Mobile)
+   ========================================== */
+
+body {
+    background-color: #0D1117;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal com gradiente externo vindo de fora até a borda */
+.signin-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: radial-gradient(circle at center, rgba(48, 54, 61, 0.35) 0%, #0D1117 65%);
+}
+
+/* Bloco centralizado com cor interna #161B22 e borda sólida de 2px #30363D */
+.signin-card {
+    width: 100%;
+    max-width: 380px;
+    background-color: #161B22;
+    border: 2px solid #30363D;
+    border-radius: 8px;
+    padding: 28px 24px;
+    box-sizing: border-box;
+    box-shadow: 0 0 35px rgba(48, 54, 61, 0.25);
+}
+
+.signin-card h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #f0f6fc;
+    margin: 0 0 22px 0;
+}
+
+/* Campos empilhados */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #c9d1d9;
+    margin-bottom: 8px;
+}
+
+.input {
+    width: 100%;
+    background-color: #0D1117;
+    border: 1px solid #30363D;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input::placeholder {
+    color: #484f58;
+}
+
+.input:focus {
+    border-color: #58a6ff;
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2);
+}
+
+/* Botão Criar Conta estilo GitHub */
+.btn-submit {
+    width: 100%;
+    margin-top: 8px;
+    padding: 9px 16px;
+    background: linear-gradient(180deg, #2ea043 0%, #238636 100%);
+    color: #ffffff;
+    border: 1px solid rgba(240, 246, 252, 0.1);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.btn-submit:hover {
+    filter: brightness(1.1);
+}
+
+/* ==========================================
+   Responsividade Mobile
+   ========================================== */
+@media (max-width: 480px) {
+    .signin-wrapper {
+        padding: 12px;
+    }
+
+    .signin-card {
+        max-width: 100%;
+        padding: 24px 18px;
+        border-radius: 10px;
+    }
+
+    .signin-card h2 {
+        font-size: 20px;
+    }
+
+    .input, .btn-submit {
+        padding: 10px 12px;
+    }
+}

@@ -1,5 +1,8 @@
 # Sistema de Análise Estudantil - TCC
 
+Repositório da documentação e monografia do TCC:
+[TCC - SAE](https://github.com/Sistema-de-analise-estudantil/Documentacao)
+
 Domínio de testes temporário do site:
 https://tccsae.onrender.com/
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/createProject.css">
+</head>
+<body>
+    <div data-include="/partials/navbar.html"></div>
+    <nav>
+        <div class="nav-div" id="nav-1">
+            <a href="home.html" id="home">Home</a>
+        </div>
+        <div class="nav-div" id="nav-2">
+            <h1>Criação de Projetos</h1>
+        </div>
+        <div class="nav-div" id="nav-3">
+            <a href="settings.html" id="settings"><img id="settingsIcon" src="img/configuracoes.png" alt="configuracoes"></a>
+        </div>
+    </nav>
+
+    <main>
+        <form>
+
+            <label for="nome">Nome do Projeto</label>
+            <input type="text" name="nome" placeholder="Nome do Projeto" id="nameContainer" required>
+
+            <label for="description">Descrição</label>
+            <input type="text" name="description" placeholder="Descrição" id="descriptionContainer" required>
+            <button>Criar Projeto</button>
+
+        </form>
+    </main>
+    <div data-include="/partials/footer.html"></div>
+    <script src="/js/includes.js"></script>
+</body>

@@ -5,47 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Projetos</title>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/myProject.css">
 </head>
 <body>
-    <header id="menu-container"></header>
-    
+    <div data-include="/partials/navbar.html"></div>
+
     <nav>
-
-        <div>
-            <h1 class="title">Meus Projetos</h1>
+        <div class="nav-div" id="nav-1">
+            <a href="home.html" id="home">Home</a>
         </div>
-
-        <div>
-            <a href="home.html" id="">Home</a>
+        <div class="nav-div" id="nav-2">
+            <h1>Meus projetos</h1>
         </div>
-
+        <div class="nav-div" id="nav-3">
+            <a href="settings.html" id="settings"><img id="settingsIcon" src="img/configuracoes.png" alt="configuracoes"></a>
+        </div>
     </nav>
 
     <main>
 
         <table>
-
             <thead>
                 <tr>
                     <th class="tableHeader">indíce</th>
                     <th class="tableHeader">Nome</th>
                 </tr>
             </thead>
-
             <tbody>
                 <tr>
                     <td class="tableData">1</td>
                     <td class="tableData"><a href="projectView.html">n sei</a></td>
                 </tr>
             </tbody>
-
         </table>
 
     </main>
 
     <script src="myProjects.js"></script>
 
-    <div id="footer-container"></div>
-    <script src="loadNavFooter.js"></script>
+    <div data-include="/partials/footer.html"></div>
+    <script src="/js/includes.js"></script>
 </body>

@@ -12,6 +12,7 @@ Instalação individual do [Node.JS](https://nodejs.org/pt-br/download) necessá
 
 **Comandos básicos para funcionamento local do site (terminal):** <br>
 ```npm install express```
+```npm install mysql2```
 
 **Comando para iniciar o servidor localmente (terminal):** <br>
 ```node index.js```
